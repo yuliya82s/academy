@@ -34,14 +34,6 @@ nav ul li{
 	margin-right: 5px;
 	color: #eeeeee;
 }
-.second-nav {display: block;}
-.second-nav ul li{
-	display: block;
-	text-decoration: none;
-	float: left;
-	margin-right: 5px;
-	color: #eeeeee;
-}
 .user-block{
 	width: 90px;
 	float: right;
@@ -146,8 +138,4 @@ form label{
 	margin-bottom: 20px;
 	width: 410px;
 	float: left;
-}
-.layout-aligner {
-	margin: 0 auto;
-	display: table;
 }
