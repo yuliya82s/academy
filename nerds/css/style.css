@@ -1,5 +1,5 @@
 body {
-    min-width: 1000px;
+    min-width: 1200px;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -10,6 +10,11 @@ body {
     background-position: ;
 
 
+}
+.clearfix:after{
+	content:'';
+	display: table;
+	clear: both;
 }
 .main-header{
 	width: 900;
@@ -36,37 +41,33 @@ body {
 .top-menu ul li{
 	color: #eeeeee;
 	padding-right: 5px;
-	display: inline-block;
 	float: left;
-}
-.top-menu:after{
-	content:'';
-	display: table;
-	clear: both;
+	
 }
 .main-header .top-menu .cart{
 	width: 100px;
 	margin: 0 auto;
 	float: right;
 }
-.main-header .slider-title{
-	width: 450px;
-	margin: 50px auto;
-	float: left;
+.slider{
+	width: 900px;
+	margin: 0 auto;
 }
-.main-header:after{
-	content:'';
-	display: table;
-	clear: both;
+.slider-title{
+	width: 400px;
+	margin: 10px;
+	float: left;
 }
 .parent-block{
 	width: 900px;
 	min-height: 900px;
 	margin: 20px auto;
 	border: 1px solid green;
-
 }
-.column {
+.columns{
+	margin: 0 auto;
+}
+.column{
 	width: 250px;
 	min-height: 400px;
 	float: left;
@@ -80,52 +81,6 @@ body {
 	border: 1px solid black;
 	float: left;
 }
-/*.main{
-	min-width: 800;
-	margin: 0 auto;
-}
-.main .title{
-	width: 250px;
-	min-height: 400px;
-	float: left;
-	margin: 20px;
-	border: 1px solid green;
-}
-.title .btn{
-	width: 138px;
-	height: 38px;
-	background-color: red;
-	text-decoration: none;
-	display: inline-block;
-}
-.main:after{
-	content:'';
-	display: table;
-	clear: both;
-}
-.studio{
-	min-width: 800px;
-	margin: 0 auto;
-}
-.studio .about-us{
-	width: 500px;
-	min-height: 400px;
-	margin: 20px;
-	border: 1px solid black;
-	float: left;
-}
-.studio .work{
-	width: 250px;
-	min-height: 400px;
-	border: 1px solid black;
-	margin: 20px;
-	float: left;
-}
-.studio::after{
-	content:'';
-	display: table;
-	clear: both;
-}*/
 .partners{
 	width: 900px;
 	margin: 0 auto;
@@ -145,12 +100,12 @@ body {
 .footer-bottom p{
 	float: left;
 }
-.map{margin: 5px;}
-
-.main-header-block:after{
-	content:'';
-	display: table;
-	clear: both;
+.map{
+	background-image: url("img/map.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 900px;
+	min-height: 500px;
 }
 .catalog-content{
 	margin: 20px auto;
@@ -161,6 +116,7 @@ body {
 }
 .catalog{
 	width: 250px;
+	min-height: 800px;
 	margin-right: 20px;
 	border: 1px solid black;
 	float: left;
@@ -168,19 +124,19 @@ body {
 form label{
 	display: block;
 }
+.shop-results{
+	width: ;
+	min-height: 1000px;
+}
 .shop{
-	width: 550px;
-	margin-right: 20px;
+	width: 600px;
+	min-height: 800px;
 	border: 1px solid black;
 	float: left;
 }
 .wrapper{
 	float: left;
-}
-.wrapper::after{
-	content:'';
-	display: table;
-	clear: both;
+	padding-left: 40px;
 }
 .button{
 	width: 300px;
