@@ -101,7 +101,7 @@ body {
 	float: left;
 }
 .map{
-	background-image: url("img/map.jpg");
+	background-image: url("../img/map.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	min-width: 900px;
