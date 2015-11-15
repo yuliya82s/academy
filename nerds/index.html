@@ -2,12 +2,13 @@
 <html>
 <head>
 	<meta charset="utf-8">
+		<link href="css/reset.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	<title>Нердс-Главная</title>	
 </head>
 <body>
 	<header class="main-header clearfix">
-		<!--<a href="" class+"logo"><img src="img/nerds logo.png" width="" height="" alt="Nerds"></a>-->
+		<div class="nav-container"><a href="" class="logo"><img src="img/nerds logo.png" width="" height="" alt="Nerds"></a>
 			<nav class="top-menu clearfix">
 				<ul>
 					<li>
@@ -27,41 +28,67 @@
 					<a href="#" class="icon-cart">Корзина</a>
 				</div>
 			</nav>
-		<div class="slider">
-			<div class="slider-title">
-				<p>Долго, дорого,<br> скрупулезно.</p>
-				<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-				<a class="btn-slider" href=""></a>
-			</div>
-			<div class="slider-title">
-				<img src="img/header.png">
-			</div>
-			<div class="slider-indicator"></div>
 		</div>
+		<div class="slider">
+	        <input type="radio" id="btn-1" name="toggle" checked>
+	        <input type="radio" id="btn-2" name="toggle">
+	        <input type="radio" id="btn-3" name="toggle">
+		        <div class="slider-controls">
+			        <label for="btn-1"></label>
+			        <label for="btn-2"></label>
+			        <label for="btn-3"></label>
+		        </div>
+	        <div class="slides">
+		        <div class="slide">
+			        <div class="slide-text">
+				        <div class="slide-title">Долго, дорого, скрупулезно</div>
+				        	<p>Математически выверенный дизайн<br>
+				  			для вашего сайта или мобильного приложения.</p>
+				        <a class="btn" href="#">Узнать больше</a>
+			        </div>
+		        </div>
+		        <div class="slide">
+			        <div class="slide-text">
+				        <div class="slide-title">Дорого, скрупулезно</div>
+					        <p>Математически выверенный дизайн<br>
+					  		для вашего сайта или мобильного приложения.</p>
+				        <a class="btn" href="#">Узнать больше</a>
+			        </div>
+		        </div>
+		        <div class="slide">
+			        <div class="slide-text">
+				        <div class="slide-title">Скрупулезно</div>
+				        	<p>Математически выверенный дизайн<br>
+				  			для вашего сайта или мобильного приложения.</p>
+				        <a class="btn" href="#">Узнать больше</a>
+		        	</div>
+		        </div>
+	        </div>
+        </div>
 	</header>
 	<div class="parent-block">
 		<div class="columns">
 			<div class="column">
 				<img src="img/block web.png">
-				<p class="column-title">Веб-сайты</p>
+				<p class="text">Веб-сайты</p>
 				<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-				<a href="#" class="btn red">Заказать</a>
+				<a class="btnn red" href="#">Заказать</a>
 			</div>
 			<div class="column">
 				<img src="img/block pres.png">
-				<p class="column-title">Приложения</p>
+				<p class="text">Приложения</p>
 				<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-				<a href="#" class="btn green">Заказать</a>
+				<a class="btnn green" href="#">Заказать</a>
 			</div>
 			<div class="column">
 				<img src="img/block apps.png">
-				<p class="column-title">Презентации</p>
+				<p class="text">Презентации</p>
 				<p>Вы даже не подозреваете насколько вы изумительны!</p>
-				<a href="#" class="btn yellow">Заказать</a>
+				<a class="btnn yellow" href="#">Заказать</a>
 			</div>
 		</div>
 		<div class="about-us">
-			<h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2><br>
+			<h2 class="text">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2><br>
 			<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p><br>
 			<ul><span>выполняем заказы на разработку</span>
 				<li>Веб-сайтов любой сложности</li>
@@ -69,7 +96,7 @@
 				<li>Слайдшоуи видео для корпоративных презентаций</li>
 			</ul>
 		</div>
-		<div class="column work">
+		<div class="column-work">
 			<img src="img/nerds logo.png" width="187" height="75" alt="Nerds">
 			<ul><span>как мы работаем:</span>
 				<li>с самоотдачей 146%</li>
@@ -79,19 +106,32 @@
 		</div>
 	</div>
 	<div class="partners"> 
-		<img src="img/glukhanko.png">
-		<img src="img/academy.png">
-		<img src="img/borodinski.png">
+		<a href="#"><img src="img/glukhanko.png"></a>
+		<a href="#"><img src="img/academy.png"></a>
+		<a href="#"><img src="img/borodinski.png"></a>
 	</div>
+	<div class="map">
+			<div class="cloud">
+				<img src="img/map-cloud.png">
+			</div>
+			<div class="box">
+				<p>NЁRDS DESIGN STUDIO</p>
+				<p>191186, Санкт-Петербург,<br>
+				ул. Б. Конюшенная, д. 19/8<br>
+				тел. +7 (812) 275-75-75</p>
+				<a class="btn-box red" href="#">Напишите нам</a>
+			</div>
+		</div>
 	<footer class="footer">
-		<div class="map"></div>
 			<div class="footer-bottom">
 				<div class="social-networks">
-					<a class="vk" title="vk" href="..." target="_blank">VK</a>
-					<a class="fb" title="fb" href="..." target="_blank">FB</a>
-					<a class="instagram" title="instagram" href="..." target="_blank">INSTAGRAM</a>
+					<a class=" dot vk" title="vk" href="..." target="_blank"></a>
+					<a class="dot fb" title="fb" href="..." target="_blank"></a>
+					<a class="dot instagram" title="instagram" href="..." target="_blank"></a>
 				</div>
-				<p>давайте дружить, это выгодно!<br>скидка 10% для друзей из социальных сетей</p>
+				<div class="footer-title">
+					<p>давайте дружить, это выгодно!<br>скидка 10% для друзей из социальных сетей</p>
+				</div>
 			</div>
 	</footer>
 </body>
