@@ -44,7 +44,7 @@ body {
 
 }
 .top-menu{
-	width: 600px;
+	width: 700px;
 	height: 40px;
 	margin: 0 auto;
 	/*border: 1px solid red;*/
@@ -77,9 +77,22 @@ body {
 	font-weight: bolder;
 
 }
+.cart div{
+	margin-left:-20px;
+	position: absolute;
+	background-image: url("../img/spritesheet.png");
+	background-repeat: no-repeat;
+	background-position: -5px -5px;
+	display: inline;
+	width: 15px;
+    height: 15px;
+    margin-top: 2px;
+   
+}
 .logo{
 	display: block;
 	float: left;
+	margin-right: 60px;
 }
 
 
@@ -179,26 +192,31 @@ body {
 }
 .parent-block{
 	width: 900px;
-	min-height: 900px;
+	min-height: 700px;
 	margin: 20px auto;
-	/*border: 1px solid green;*/
+	border: 1px solid green;
 }
 .columns{
 	margin: 0 auto;
 }
 .column{
 	width: 250px;
-	min-height: 400px;
+	min-height: 350px;
 	float: left;
-	margin: 20px;
+	margin: 10px 20px;
 	/*border: 1px solid red;*/
 }
 .column-work{
 	width: 250px;
-	min-height: 400px;
+	min-height: 350px;
 	float: right;
-	margin: 20px 48px;
+	margin: 10px 48px;
 	/*border: 1px solid red;*/
+}
+.column-work img{
+	margin-bottom: 20px;
+	margin-right: 10px; 
+	margin-left: 10px;
 }
 .btnn{
 	width: 140px;
@@ -232,19 +250,22 @@ body {
 }
 .about-us{
 	width: 500px;
-	min-height: 400px;
-	margin: 20px;
+	min-height: 350px;
+	margin: 10px 20px;
 	/*border: 1px solid black;*/
 	float: left;
 }
 .partners{
 	width: 900px;
-	height: 200px;
+	height: 150px;
 	margin: 0 auto;
 	/*border: 1px solid black;*/
+	border-top: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
 }
 .partners img{
-	margin: 40px 40px;
+	float: left;
+	margin: 20px 40px;
 }
 .map{
 	position: relative;
@@ -254,6 +275,7 @@ body {
 	min-width: 1200px;
 	min-height: 450px;
 	background-size: 100% auto;
+	margin-top: 20px;
 }
 .cloud{
 	position: absolute;
@@ -287,19 +309,51 @@ body {
 	height: ;
 	margin: 0 auto;
 }
-.dot{
+.vk,.fb,.instagram{
 	width: 50px;
 	height: 50px;
 	background-color: #eeeeee;
 	border-radius: 30px 30px;
 	margin: 20px 10px;
 	display: inline-block;
+	position: relative;
 }
-
-.dot:hover{
+.vk span{
+	background: url("../img/spritesheet.png");
+	background-repeat: no-repeat;
+	background-position: -5px -72px;
+	margin: 17px 11px;
+    width: 26px;
+    height: 15px;
+    position: absolute;
+}
+.fb span{
+	background: url("../img/spritesheet.png");
+	background-repeat: no-repeat;
+	background-position: -77px -40px;
+	margin: 15px 17px;
+    width: 12px;
+    height: 22px;
+    position: absolute;
+}
+.instagram span{
+	background: url("../img/spritesheet.png");
+	background-repeat: no-repeat;
+	background-position: -99px -40px;
+	margin: 15px 15px;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+}
+.vk:hover{
 	background-color: #fb565a;
 }
-
+.fb:hover{
+	background-color: #fb565a;
+}
+.instagram:hover{
+	background-color: #fb565a;
+}
 .footer-title {
 	float: left;
 }
@@ -486,7 +540,9 @@ body {
 	margin-right: 30px;
 	margin-left: 30px;
 }
-
+.wrapper img{
+    margin-bottom: 0px;
+}
 .box-shop{
     position: absolute;
     width: 220px;
@@ -512,8 +568,16 @@ body {
 	text-transform: uppercase;
 	float: left;
 	margin-right: 20px;
-	margin-left: 35px
+	margin-left: 35px;
 }
+.price,.type,.function{
+	font-size: 12px;
+	text-decoration: none;
+	color: #eeeeee;
+	border-bottom: 1px dashed;
+	border-color: green; 
+}
+
 .button{
 	width: 400px;
 	/*border: 1px solid black;*/
@@ -559,13 +623,19 @@ body {
 .text{
 	font-size: 18px;
     color: #000;
-    font-weight: bolder;
+    font-weight: bold;
     text-transform: uppercase;
     line-height: 18px;
     margin: 20px 0;
 }
-
+.box p{
+	margin: 25px 10px 15px;
+}
+.box-shop p{
+	margin: 25px 25px 20px;
+}
  /*sprite*/
+}
 /*.sprite{
     background-image: url(img/spritesheet.png);
     background-repeat: no-repeat;
