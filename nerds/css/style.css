@@ -36,6 +36,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     margin-top: 65px;
+    margin-left: -43px;
 }
 .nav-container{
 	margin: 0 auto;
@@ -485,12 +486,14 @@ body {
 	width: 300px;
     height: 150px;
     margin-top: 15px;
+    margin-left: 18px;
  }
  .btn-form{
  	width: 140px;
  	height: 38px;
  	border-radius: 5px;
- 	margin-top: 20px;
+ 	margin-top: 38px;
+	margin-left: 16px;
  }
  /*sprite*/
 .form input[type="radio"]{
@@ -498,10 +501,16 @@ body {
 
 }
 .form input[type="radio"]+label{
-	display: block;
+	/*display: block;
 	position: relative;
 	font-size: 16px;
 	line-height: 25px;
+	padding-left: 30px;
+	margin-bottom: 20px;*/
+	display: block;
+	position: relative;
+	font-size: 16px;
+	line-height: 20px;
 	padding-left: 30px;
 	margin-bottom: 20px;
 }
@@ -524,12 +533,19 @@ body {
 	display: none;
 }
 .form input[type="checkbox"]+label{
-	display: block;
+	/*display: block;
 	position: relative;
 	font-size: 16px;
 	line-height: 25px;
 	padding-left: 30px;
+	margin-bottom: 20px;*/
+	display: block;
+	position: relative;
+	font-size: 16px;
+	line-height: 20px;
+	padding-left: 30px;
 	margin-bottom: 20px;
+	
 }
 .form input[type="checkbox"]+label::before{
 	content: "";
@@ -591,8 +607,9 @@ body {
 	display: block;
 	text-transform: uppercase;
 	float: left;
-	margin-right: 20px;
-	margin-left: 35px;
+	margin-right: -6px;
+	margin-left: 46px;
+	font-size: 12px;
 }
 .price,.type,.function{
 	font-size: 12px;
@@ -649,10 +666,27 @@ body {
     line-height: 18px;
     margin: 20px 0;
 }
-.text-form{
-	font-size: 22px;
-    color: #000;
-    font-weight: bolder;
+.text-form-radio{
+	font-size: 17px;
+	color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+.text-form-checkbox{
+	font-size: 17px;
+	color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	margin-top: 51px;
+}
+.text-head{
+	font-size: 17px;
+	color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-left: 48px;
 }
 .box p{
 	margin: 25px 10px 15px;
