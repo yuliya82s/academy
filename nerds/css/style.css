@@ -252,6 +252,9 @@ body {
 .yellow{
 	background-color: #efc84a;
 }
+.grey{
+	background-color: #cccccc;
+}
 .red:hover {
     background-color: #d6494d;
  }
@@ -693,4 +696,128 @@ body {
 }
 .box-shop p{
 	margin: 25px 25px 20px;
+}
+
+
+/* Всплывающая форма */
+.modal-content {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: none;
+
+  width: 500px;
+  margin-top: 150px;
+  margin-top: 80px;
+  margin-left: -230px;
+  padding: 50px 80px;
+
+  color: black;
+  background: white;
+  box-shadow: 0 30px 50px rgba(0,0,0,.7);
+}
+
+.modal-content-show {
+  display: block;
+  -webkit-animation: bounce 1.6s;
+  animation: bounce 1.6s;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-error {
+  -webkit-animation: shake 0.6s;
+  animation: shake 0.6s;
+}
+
+.modal-content-close {
+  position: absolute;
+  top: 10px;
+  left: 550px;
+  cursor: pointer;
+}
+
+.modal-content .contact-form {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.contact-form input {
+  width: 100px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  padding-right: 40px;
+
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  color: #000;
+  border: 2px solid #cccccc;
+  outline: none;
+}
+
+.contact-form textarea {
+  border: 2px solid #cccccc;
+}
+
+.contact-form input:focus {
+/*  border-color: #663d15;*/
+  border-color: red;
+}
+
+.contact-form .restore {
+  float: right;
+  color: #000;
+}
+
+.contact-form div {
+	float: left;
+}
+
+.contact-form .btn {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.contact-form .buttons .cancel {
+	margin-right: 30px;
+}
+
+.contact-form label {
+	font-weight: bold;
+	display: block;
+}
+.contact-form input {
+	display: block;
+}
+.contact-form .cancel {
+	margin-left: 30px;
 }

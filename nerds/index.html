@@ -119,7 +119,7 @@
 				<p>191186, Санкт-Петербург,<br>
 				ул. Б. Конюшенная, д. 19/8<br>
 				тел. +7 (812) 275-75-75</p>
-				<a class="btn-box red" href="#">Напишите нам</a>
+				<a class="btn-box red login" href="#">Напишите нам</a>
 			</div>
 		</div>
 	<footer class="footer">
@@ -135,5 +135,65 @@
 				</div>
 			</div>
 	</footer>
+
+	<div class="modal-content">
+
+      <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="field">
+	        <label for="contact-name">Ваше имя
+	        </label>
+			<input type="text" class="contact-name" name="contact-name" id=class="contact-name">
+		</div>
+        
+        <div class="field">
+	        <label for="contact-email">Ваш email
+	        </label>
+	        <input type="text" class="contact-email" name="contact-email" id="contact-email">
+		</div>
+
+        <div class="field">
+	        <label for="letter">
+	        	Текст письма:
+	        </label>
+	        <textarea rows="10" cols="45" name="text" id="letter"></textarea>
+    	</div>
+	
+		<div class="buttons">
+	        <a class="btnn red" href="#">Отправить</a>
+	        <a class="btnn grey cancel" href="#">Отмена</a>
+	    </div>
+
+		<div class="modal-content-close">
+			<span>Закрыть</span>
+		</div>
+
+      </form>
+    </div>
+    
+    <script>
+      var link = document.querySelector(".login");
+      var popup = document.querySelector(".modal-content");
+      var close = document.querySelector(".modal-content-close");
+      var cancel = document.querySelector(".buttons .cancel");
+      var contact_name = popup.querySelector("[name=contact-name]");
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+        contact_name.focus();
+      });
+
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+      });
+
+      cancel.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+      });
+
+    </script>
+
 </body>
 </html>
