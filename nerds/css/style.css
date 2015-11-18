@@ -1,3 +1,4 @@
+
 body {
     min-width: 1200px;
     margin: 0;
@@ -229,7 +230,12 @@ body {
 }
 .column-work ul li{
 	list-style-image: url("../img/list.png");
-	line-height: 2.8;
+	line-height: 2.7;
+}
+.column-work li:first-child{
+	list-style: none;
+	text-transform: uppercase;
+	padding-top: 26px;
 }
 .btnn{
 	width: 140px;
@@ -275,7 +281,12 @@ body {
 } 
 .about-us ul li{
 	list-style-image: url("../img/list.png");
-	line-height: 3.0;
+	line-height: 2.7;
+}
+.about-us li:first-child{
+	list-style: none;
+	text-transform: uppercase;
+	padding-top: 23px;
 }
 .text-head{
 	font-size: 33px;
@@ -690,6 +701,10 @@ body {
 	font-weight: bold;
 	text-transform: uppercase;
 	padding-left: 48px;
+}
+.footer-text{
+	font-size: 33px;
+	font-weight: bold;
 }
 .box p{
 	margin: 25px 10px 15px;
